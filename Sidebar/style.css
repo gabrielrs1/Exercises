@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+
+    background-color: rgba(184, 197, 235, 0.404);
+}
+
+.menu {
+    float: right;
+
+    margin-top: 30px;
+    margin-right: 40px;
+
+    font-size: 45px;
+
+
+    color: rgb(15, 159, 241);
+
+    cursor: pointer;
+}
+
+.menu:hover {
+    color: rgba(15, 158, 241, 0.767);
+}
+
+aside {
+    visibility: hidden;
+    width: 400px;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 6fr .4fr;
+    grid-template-areas: "head"
+                         "link"
+                         "social";
+
+    background-color: white;
+}
+
+aside .head {
+    grid-area: head;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+}
+
+aside .head img {
+    width: 240px;
+
+    margin-left: 5px;
+}
+
+aside .head span {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(216, 41, 41);
+
+    margin-right: 20px;
+
+    cursor: pointer;
+}
+
+aside .links {
+    grid-area: link;
+}
+
+aside .links ul {
+    list-style: none;
+}
+
+aside .links ul li {
+    line-height: 60px;
+
+    margin-left: 15px;
+}
+
+aside .links ul li a {
+    text-decoration: none;
+    font-size: 25px;
+
+    color: rgb(121, 124, 133);
+}
+
+aside .links ul li a:hover {
+    color: black;
+
+    transition: 300ms;
+}
+
+aside .social {
+    grid-area: social;
+}
+
+aside .social ul {
+    display: flex;
+    list-style: none;
+
+    justify-content: center;
+}
+
+aside .social ul li {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+aside .social ul li a {
+    color: rgba(64, 64, 197, 0.842);
+}
+
+aside .social ul li a:hover {
+    color: rgba(0, 0, 255, 0.89);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/Sidebar/style.css">
+</head>
+<body>
+    <span class="menu" onclick="openn()">
+        <i class="fas fa-bars"></i>
+    </span>
+
+    <aside id="sidebar">
+        <div class="head">
+            <img src="/Sidebar/logo.svg" alt="Logo">
+            <span onclick="closee()">X</span>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.sketch.com">
+                        <i class="fab fa-sketch"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <script src="/Sidebar/script.js"></script>
+</body>
+</html>
